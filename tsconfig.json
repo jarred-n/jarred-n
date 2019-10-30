@@ -7,6 +7,10 @@
       "esnext"
     ],
     "baseUrl": ".",
+    "paths": {
+      "@constants/*": ["./src/constants/*"],
+      "@components/*": ["./src/components/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
