@@ -4,7 +4,7 @@ import cs from 'classnames'
 import routePath from '@constants/routePath'
 import { svgSprite } from '@constants/constants'
 
-import styles from './index.scss'
+import styles from './index.module.scss'
 
 const headerList = {
   home: {
