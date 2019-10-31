@@ -1,1 +1,11 @@
-@components/common/autoBackToTop/node_modules/react@components/common/autoBackToTop/node_modules/react
+import React, { Component } from 'react'
+
+export default class componentName extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+}
