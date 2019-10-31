@@ -24,6 +24,7 @@ const modules = require('./modules');
 const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const eslint = require('eslint');
 
@@ -321,6 +322,9 @@ module.exports = function(webpackEnv) {
         // please link the files into your node_modules/ and let module-resolution kick in.
         // Make sure your source files are compiled, as they will not be processed in any way.
         new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+                //Use this to load modules whose location is specified in the paths section of 
+        // tsconfig.json when using webpack 4.
+        new TsconfigPathsPlugin({ configFile: path.resolve(__dirname, '../tsconfig.json')}),
       ],
     },
     resolveLoader: {

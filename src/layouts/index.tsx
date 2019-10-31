@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Routers from '../Routers'
 import Header from '@components/common/header'
 
@@ -10,13 +11,14 @@ export default class Layouts extends Component {
 
   render() {
     return (
-    //   <AutoBackToTop>
-        <div>
+      <BrowserRouter>
+        <Route>
+          <div>
             <Header />
             <Routers />
-        </div>
-        
-    //   </AutoBackToTop>
+          </div>
+        </Route>
+      </BrowserRouter>
     )
   }
 }
