@@ -1,6 +1,135 @@
-header {
-    width: 100%;
-    height: 3.25rem;
-    display: flex;
-    background-color: $white;
+.header {
+  width: 100%;
+  height: 3.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba($white, 0.95);
+  box-shadow: 0 1px 40px -8px rgba($black, 0.5);
+  font: 0.8rem 'Ubuntu', sans-serif;
+  .logo {
+    width: 11rem;
+    height: 2.2rem;
+    margin-left: 1.5rem;
+  }
 }
+
+.clear_navbar_bg {
+  box-shadow: none;
+  background: transparent;
+  transition: all 600ms ease;
+  &:hover {
+    background: rgba($white, 0.95);
+    box-shadow: 0 1px 40px -8px rgba($black, 0.5);
+  }
+}
+
+.nav_item {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.4rem;
+  padding-right: 0.2rem;
+  cursor: pointer;
+  &::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: $orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 300ms ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  a {
+    display: block;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    color: $svg_color;
+    .nav_icon {
+      position: relative;
+      top: 0.1rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      fill: $svg_color;
+      margin-right: 0.4rem;
+    }
+    &:hover {
+      color: $orange;
+      > .nav_icon {
+        fill: $orange;
+      }
+    }
+    &:hover > .icon_home {
+      animation: horizontal 2s ease infinite;
+    }
+    &:hover > .icon_blog {
+      animation: wrench 2s ease infinite;
+    }
+  }
+}
+
+@keyframes horizontal {
+  0% {
+    transform: translate(0, 0);
+  }
+  6% {
+    transform: translate(5px, 0);
+  }
+  12% {
+    transform: translate(0, 0);
+  }
+  18% {
+    transform: translate(5px, 0);
+  }
+  24% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(5px, 0);
+  }
+  100%,
+  36% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes wrench {
+    0% {
+      transform: rotate(-12deg);
+    }
+    8% {
+      transform: rotate(12deg);
+    }
+    10% {
+      transform: rotate(24deg);
+    }
+    18%,
+    20% {
+      transform: rotate(-24deg);
+    }
+    28%,
+    30% {
+      transform: rotate(24deg);
+    }
+    38%,
+    40% {
+      transform: rotate(-24deg);
+    }
+    48%,
+    50% {
+      transform: rotate(24deg);
+    }
+    58%,
+    60% {
+      transform: rotate(-24deg);
+    }
+    68% {
+      transform: rotate(24deg);
+    }
+    100%,
+    75% {
+      transform: rotate(0);
+    }
+  }

@@ -1,0 +1,47 @@
+// main
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../assets/fonts/Ubuntu-Regular.woff2');
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.no-user-select {
+  user-select: none;
+}
+
+@media screen and (max-width: 2560px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+}

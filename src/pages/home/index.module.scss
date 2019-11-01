@@ -1,0 +1,17 @@
+.blog_home {
+    position: relative;
+    color: #666;
+    overflow-x: hidden;
+    .ad_wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 0;
+        transition: 1s opacity linear;
+    }
+}

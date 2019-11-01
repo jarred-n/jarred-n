@@ -3,6 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import Routers from '../Routers'
 import Header from '@components/common/header'
 
+
+import '@assets/styles/global.scss';
 export default class Layouts extends Component {
   constructor(props: any) {
     super(props)
