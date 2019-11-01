@@ -1,5 +1,14 @@
 import { ArticleStoreType } from './article';
 
+export interface Cover {
+    name: string;
+    show: boolean;
+    upload_date: string;
+    url: string;
+    __v: number;
+    _id: string;
+  }  
+
 export interface Project {
     introduction: string;
     poster: string;
