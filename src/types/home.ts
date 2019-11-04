@@ -28,7 +28,7 @@ export interface HomeStore {
     getMotto: () => void;
     getProject: () => void;
     loadBgImd: () => void;
-    getCover: (position: string) => void;
+    getCover: (position?: string) => void;
  }
 
 export interface HomeProps {

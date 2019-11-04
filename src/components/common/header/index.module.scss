@@ -1,12 +1,15 @@
 .header {
+  position: fixed;
+  display: flex;
   width: 100%;
   height: 3.25rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: rgba($white, 0.95);
   box-shadow: 0 1px 40px -8px rgba($black, 0.5);
+  z-index: 2;
   font: 0.8rem 'Ubuntu', sans-serif;
+  transition: all 500ms ease;
   .logo {
     width: 11rem;
     height: 2.2rem;

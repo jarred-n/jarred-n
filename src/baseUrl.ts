@@ -1,4 +1,4 @@
-import { api } from './src/constants/constants';
+import { api } from './constants/constants';
 
 const baseUrl = {
     dev: api.dev,

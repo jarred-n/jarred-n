@@ -1,5 +1,5 @@
 import axios, { AxiosError, AxiosResponse, AxiosRequestConfig } from 'axios';
-import baseURL from '../../baseUrl';
+import baseURL from '../baseUrl';
 
 const CancelToken = axios.CancelToken;
 

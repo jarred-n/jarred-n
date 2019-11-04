@@ -11,6 +11,10 @@ export interface ArticleStoreType {
     isDetailLoading: false;
 }
 
+export interface ArticleProps {
+    articleStore?: ArticleStoreType;
+    location?: any;
+}
 export interface ArticleDetail {
     _id: string;
     header_cover: string;

@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'mobx-react';
+import stores from './stores/index';
 import * as serviceWorker from './serviceWorker';
 import Layouts from './layouts';
 
-ReactDOM.render(<Layouts />, document.getElementById('root'));
+ReactDOM.render(
+    <Provider {...stores}>
+        <Layouts />
+    </Provider>, 
+    document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
