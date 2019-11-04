@@ -9,6 +9,8 @@ export interface ArticleStoreType {
     likeNum: boolean;
     curIp: string;
     isDetailLoading: false;
+    isSummaryLoading: false;
+    getPostsByPage: (page: number) => void;
 }
 
 export interface ArticleProps {

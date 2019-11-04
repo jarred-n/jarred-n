@@ -10,5 +10,10 @@ export const svgSprite = {
     blog: '#blogger-letter-logotype',
     megaphone: '#megaphone',
     fire: '#flame',
-    new: "#new"
+    new: "#new",
+    time: '#time',
+    eye: '#eye',
+    comments1: '#multimedia',
+    closeFolder: '#folder',
+    more: '#more'
 }

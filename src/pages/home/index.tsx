@@ -8,8 +8,10 @@ import { svgSprite } from '@constants/constants';
 import { webpSuffix } from '../../constants/constants';
 import { Link } from 'react-router-dom';
 import routePath from '@constants/routePath';
+import PostSummary from '@components/post/postSummary/index';
 
 @inject('homeStore')
+@inject('articleStore')
 @observer
  class Home extends Component<HomeProps, {}> {
   constructor(props: any) {
@@ -22,6 +24,7 @@ import routePath from '@constants/routePath';
     const isWebp = window.localStorage.getItem('isWebp') === 'true';
     homeStore!.getCover();
     homeStore!.getProject();
+    articleStore!.getPostsByPage(1);
     
   }
 
