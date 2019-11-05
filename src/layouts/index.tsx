@@ -9,6 +9,7 @@ import ScrollToTop from '@components/widget/scrollToTop'
 import '@assets/styles/global.scss';
 import { inject, observer } from 'mobx-react';
 import { LayoutsProps } from '../types/layout';
+import Footer from '@components/common/footer'
 
 
 @inject('layoutsStore')
@@ -35,6 +36,7 @@ export default class Layouts extends Component<LayoutsProps, {}> {
           </div>
           <ScrollToTop />
           <Player />
+          <Footer />
         </Route>
       </BrowserRouter>
     )
