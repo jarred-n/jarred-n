@@ -25,6 +25,8 @@ import PostSummary from '@components/post/postSummary/index';
     homeStore!.getCover();
     homeStore!.getProject();
     articleStore!.getPostsByPage(1);
+    homeStore!.getMotto();
+    homeStore!.getAnnouncement();
     
   }
 

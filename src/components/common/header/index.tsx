@@ -11,12 +11,29 @@ import styles from './index.module.scss'
 const headerList = {
   home: {
     url: routePath.home,
-    icon: svgSprite.home
+    icon: svgSprite.home,
+    title: '主页'
   },
   blog: {
     url: routePath.blog,
     icon: svgSprite.blog,
-  }
+    title: '博客'
+  },
+  archive: {
+    url: routePath.archive,
+    icon: svgSprite.archive,
+    title: '记录'
+  },
+  music: {
+    url: routePath.music,
+    icon: svgSprite.music,
+    title: '旅行'
+  },
+  CV: {
+    url: routePath.cv,
+    icon: svgSprite.cv,
+    title: '简历'
+  },
 }
 export default class Header extends Component<{}, {isTop: boolean}> {
 
@@ -73,7 +90,7 @@ export default class Header extends Component<{}, {isTop: boolean}> {
                       <svg className={cs(styles.nav_icon, styles[`icon_${key}`])}>
                         <use xlinkHref={`${svgIcons}${headerList[key].icon}`} />
                       </svg>
-                      <span>{key}</span>
+                      <span>{headerList[key]['title']}</span>
                     </Link>
                   </li>
                 ))}

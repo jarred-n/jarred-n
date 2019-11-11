@@ -5,7 +5,8 @@ import homeService from '../apis/home.service';
 import { Project } from '../types/home';
 
 class HomeStore {
-
+    @observable public announcement: string = '';
+    @observable public motto: string = '';
     @observable public coverUrl: string = '';
     @observable public projects: Project[] = [];
 
@@ -30,12 +31,14 @@ class HomeStore {
      * @memberof HomeStore
      */
     public getCover = async (position: string) => {
+        console.log('position', position);
         let curId = window.localStorage.cover_id;
         if (!curId) {
             curId = 0;
         }
         try {
             const res = await homeService.getCover(curId, position);
+            console.log('res', res);
             runInAction(() => {
                 this.coverUrl = res.data.url;
                 window.localStorage.setItem('cover_id', res.data._id);
@@ -45,6 +48,28 @@ class HomeStore {
             }
         } catch (e) {
             setToast('获取 Cover 失败');
+        }
+    }
+
+    public getAnnouncement = async () => {
+        try {
+            const res = await homeService.getAnnouncement();
+            runInAction(() => {
+                this.announcement = res.data.content;
+            });
+        } catch (e) {
+            setToast('获取 Announcement 失败');
+        }
+    };
+
+    public getMotto = async () => {
+        try {
+            const res = await homeService.getMotto();
+            runInAction(() => {
+                this.motto = res.data.content;
+            });
+        } catch (e) {
+            setToast('获取 Motto 失败');
         }
     }
 

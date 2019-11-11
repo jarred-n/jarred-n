@@ -1,6 +1,7 @@
 export const api = {
-    prod: 'https://api.yanceyleo.com/api',
-    dev: '127.0.0.1:3001/api',
+    // prod: 'https://api.yanceyleo.com/api',
+    prod: 'http://127.0.0.1:3001/api',
+    dev: 'http://127.0.0.1:3001/api'
 };
 
 export const webpSuffix = '?x-oss-process=image/format,webp';
@@ -16,7 +17,10 @@ export const svgSprite = {
     comments1: '#multimedia',
     closeFolder: '#folder',
     more: '#more',
-    heart: '#heart'
+    heart: '#heart',
+    archive: '#archive-black-box',
+    music: '#music-player',
+    cv: '#curriculum-vitae'
 }
 
 export const socialMedia = {

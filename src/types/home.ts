@@ -1,5 +1,21 @@
 import { ArticleStoreType } from './article';
 
+
+export interface Announcement {
+    __v: number;
+    _id: string;
+    content: string;
+    upload_date: string;
+  }
+  
+  export interface Motto {
+    __v: number;
+    _id: string;
+    content: string;
+    upload_date: string;
+  }
+  
+
 export interface Cover {
     name: string;
     show: boolean;
