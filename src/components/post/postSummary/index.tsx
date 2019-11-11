@@ -29,7 +29,7 @@ class PostSummary extends Component<ArticleProps, {}> {
       <>
         {articleStore!.isSummaryLoading ? (
           <Skeletons />
-        ) : (
+        ) : articleStore!.posts.length ? (
           articleStore!.posts.map((post: ArticleDetail, key: number) => (
             <article
               className={cs(
@@ -79,7 +79,7 @@ class PostSummary extends Component<ArticleProps, {}> {
                     </svg>
                     <Link to={`${routePath.blogDetail}${post._id}`}>
                       {post.like_count.length}{' '}
-                      {post.like_count.length > 1 ? 'Likes' : 'Like'}  
+                      {post.like_count.length > 1 ? 'Likes' : 'Like'}
                     </Link>
                   </span>
                   <span className={styles.category}>
@@ -102,10 +102,12 @@ class PostSummary extends Component<ArticleProps, {}> {
               </div>
             </article>
           ))
+        ) : (
+          <p className={styles.no_data_tip}>暂无发表文章!</p>
         )}
       </>
     )
   }
 }
 
-export default trackWindowScroll(PostSummary);
+export default trackWindowScroll(PostSummary)

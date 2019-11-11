@@ -20,7 +20,9 @@ export const svgSprite = {
     heart: '#heart',
     archive: '#archive-black-box',
     music: '#music-player',
-    cv: '#curriculum-vitae'
+    cv: '#curriculum-vitae',
+    leftQuote: '#left-quote',
+    rightQuote: '#right-quote'
 }
 
 export const socialMedia = {

@@ -67,6 +67,57 @@
 
     }
 
+    .social_media_container {
+        position: relative;
+        z-index: 1;
+        max-width: 27rem;
+        margin: 0 auto;
+        background: rgba(#000, 0.5);
+        padding: 1rem;
+        border-radius: 10px;   
+
+        .social_media_motto {
+            position: relative;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #eaeadf;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+            .motto_content {
+                display: block;
+                width: 24rem;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .left_quote,
+            .right_quote {
+                position: relative;
+                width: 0.9rem;
+                height: 0.9rem;
+                fill: #fff;
+            }
+            .left_quote {
+                margin-right: 0.4rem;
+            }
+            .right_quote {
+                margin-right: 0;
+                margin-left: 0.4rem;
+            }
+        }
+        .up_triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 18px solid transparent;
+            border-bottom-color: rgba(0,0,0,0.5);
+            top: -36px;
+            left: 80px;
+        }
+    }
+
     .content {
         margin: 0 auto;
         padding: 3rem 0 1rem;

@@ -109,7 +109,12 @@ $small_text: #888;
   }
 
 }
-
+.no_data_tip {
+  width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.7rem;
+}
 .reverse {
   flex-direction: row-reverse;
   text-align: left;

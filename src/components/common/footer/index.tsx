@@ -31,11 +31,11 @@ class Footer extends React.Component<{}, {}> {
       <footer className={styles.yancey_common_footer}>
         <div className={styles.footer_container}>
           <p className={styles.creator}>
-            Brought to you with
+            告诉你
             <svg className={styles.icon_heart}>
               <use xlinkHref={`${svgIcons}${svgSprite.heart}`} />
             </svg>
-            by Yancey
+            Jarred-N
           </p>
 
           <hr className={styles.dot_split} />
