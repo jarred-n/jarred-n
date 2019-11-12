@@ -1,20 +1,49 @@
 .bg_header {
-    display: flex;
-    justify-content: center;
-    padding-top: 15rem;
-    width: 100%;
-    height: 22rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    span {
-        font-size: 3rem;
-        background: -webkit-gradient(linear, right top, left top, color-stop(33%, #c4987a), color-stop(73%, #ffd5bf));
-        background: -webkit-linear-gradient(right, #c4987a 33%, #ffd5bf 73%);
-        background: linear-gradient(to left, #c4987a 33%, #ffd5bf 73%); 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-font-smoothing: antialiased;
-    }
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+  width: 100%;
+  height: 22rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  span {
+    font-size: 3rem;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      color-stop(33%, #c4987a),
+      color-stop(73%, #ffd5bf)
+    );
+    background: -webkit-linear-gradient(right, #c4987a 33%, #ffd5bf 73%);
+    background: linear-gradient(to left, #c4987a 33%, #ffd5bf 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+.main_content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2rem;
+  width: 62rem;
+  margin: 3rem auto 0;
+  .no_articles {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  .back {
+    display: block;
+    padding: 0.2rem 1rem;
+    border: 2px solid #f12742;
+    border-radius: 1.75rem;
+    color: #f12742;
+    text-align: center;
+    margin: 2rem auto;
+    width: 8rem;
+  }
 }
