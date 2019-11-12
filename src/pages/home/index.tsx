@@ -64,8 +64,8 @@ class Home extends Component<HomeProps, {}> {
                   <use xlinkHref={`${svgIcons}${svgSprite.leftArrow}`} />
                 </svg>
               </li>
-              {Object.keys(socialMedia).map(key => {
-                ;<li
+              {Object.keys(socialMedia).map(key => (
+                <li
                   className={cs(
                     styles.social_media_item,
                     key === 'twitter' || key === 'wechat' ? styles.qr_code : '',
@@ -84,7 +84,7 @@ class Home extends Component<HomeProps, {}> {
                     </svg>
                   </a>
                 </li>
-              })}
+              ))}
               <li
                 className={styles.social_media_item}
                 onClick={() => {

@@ -41,7 +41,7 @@ class Footer extends React.Component<{}, {}> {
           <hr className={styles.dot_split} />
           <section className={styles.copyright_wrapper}>
             <p className={styles.copyright}>
-              Copyright &copy; {new Date().getFullYear()} Yancey Inc. All rights
+              Copyright &copy; {new Date().getFullYear()} Jarred-N Inc. All rights
               reserved.
             </p>
             <ul>

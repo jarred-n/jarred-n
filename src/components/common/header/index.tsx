@@ -86,7 +86,9 @@ export default class Header extends Component<{}, {isTop: boolean}> {
             <ul>
                 {Object.keys(headerList).map(key => (
                   <li className={styles.nav_item} key={key}>
-                    <Link to='/'>
+                    <Link to={{
+                        pathname: headerList[key].url
+                      }}>
                       <svg className={cs(styles.nav_icon, styles[`icon_${key}`])}>
                         <use xlinkHref={`${svgIcons}${headerList[key].icon}`} />
                       </svg>

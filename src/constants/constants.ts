@@ -4,6 +4,8 @@ export const api = {
     dev: 'http://127.0.0.1:3001/api'
 };
 
+export const aliOSS = '//jarred-n-assets.oss-cn-shenzhen.aliyuncs.com';
+export const blogBg = `${aliOSS}/static/blog_page_header.jpg`;
 export const webpSuffix = '?x-oss-process=image/format,webp';
 
 export const svgSprite = {
@@ -22,7 +24,9 @@ export const svgSprite = {
     music: '#music-player',
     cv: '#curriculum-vitae',
     leftQuote: '#left-quote',
-    rightQuote: '#right-quote'
+    rightQuote: '#right-quote',
+    rightArrow: '#right-arrow',
+    leftArrow: '#left-arrow'
 }
 
 export const socialMedia = {
