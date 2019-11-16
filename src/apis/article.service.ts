@@ -4,7 +4,7 @@ import { ArticleDetail } from '../types/article';
 
 class ArticleService {
     public getPostsByPage(page: number): Promise<AxiosResponse<ArticleDetail[]>> {
-        return GET(`/article/${page}`, null, '');
+        return GET(`/articles/${page}`, null, '');
     }
 }
 
