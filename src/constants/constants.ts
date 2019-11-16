@@ -1,6 +1,6 @@
 export const api = {
     // prod: 'https://api.yanceyleo.com/api',
-    prod: 'http://127.0.0.1:3001/api',
+    prod: 'http://118.31.48.199/:3001/api',
     dev: 'http://127.0.0.1:3001/api'
 };
 
