@@ -1,16 +1,16 @@
-## Hi there 👋
+**[Huanjia Hong]**
 
-<!--
-**jarred-n/jarred-n** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Software Engineer focused on web applications and AI-powered products.
+I like building things end to end — from the interface a user sees
+to the services and data behind it.
 
-Here are some ideas to get you started:
+#### Currently
+- Exploring high-performance and distributed computing
+- Based in Auckland, NZ — open to software engineering roles
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### Selected work
+- **[MERN AI App]** — A full-stack web app that leverages large language models (LLMs) to generate AI-powered study notes and practice exams for university students. → [live demo]
+- **[Library System]** — A library management system with clean REST endpoints and a well-structured relational schema. → [repo]
+
+#### Reach
+[LinkedIn](https://www.linkedin.com/in/huanjia-hong-867887327/) · [Email](hhuanjia86@gmail.com)
